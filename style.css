@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+/* section{                        
+    height: 80vh;
+} */
+
+.max-width{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.curser-pointer{
+    cursor: pointer;
+}
+.btn-anim:hover{
+    opacity: .7;
+}
