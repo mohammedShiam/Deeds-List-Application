@@ -32,9 +32,7 @@ class UI {
             }, 3000);
         } else {
 
-            // Display Block Deeds Section
-            this.output.classList.remove('d-none')
-
+           
             
             // remove input value
             this.deedsName.value = ''
@@ -99,11 +97,11 @@ class UI {
 
         const div = document.createElement('div')
         div.innerHTML =
-            `<div class="col-12 d-flex justify-content-between">
-            <p class="text-light">${deeds.name}</p>
-            <p class="text-light">${deeds.time}</p>
-            <p class="text-light">${deeds.status}</p>
-            <div class="d-flex">
+            `<div class="col-12 d-flex w-100">
+            <p class="text-light w-30">${deeds.name}</p>
+            <p class="text-light w-30">${deeds.time}</p>
+            <p class="text-light w-30">${deeds.status}</p>
+            <div class="d-flex w-10">
                 <p class="text-light curser-pointer mr-2" data-id="${deeds.id}">
                     <i class="bi bi-pencil-square btn-anim"></i>
                 </p>
@@ -130,10 +128,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // New instance of ui
     const ui = new UI();
-    if (ui.deedsListArray.length > 0) {
-        ui.output.classList.remove('d-none')
-    }
-
+   
     // Submit Deeds Input Listener
     ui.deedsInput.addEventListener('submit', function (event) {
         event.preventDefault()
