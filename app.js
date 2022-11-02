@@ -35,11 +35,11 @@ class UI {
             // Display Block Deeds Section
             this.output.classList.remove('d-none')
 
-            // TODO: Remove Comment
+            
             // remove input value
-            // this.deedsName.value = ''
-            // this.deedsTime.value = ''
-            // this.deedsStatus.value = ''
+            this.deedsName.value = ''
+            this.deedsTime.value = ''
+            this.deedsStatus.value = ''
 
             // Show Input
             const deeds = {
